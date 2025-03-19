@@ -7,6 +7,4 @@ const router = express.Router();
 router.post("/",upload.array("farmPhotos", 10), farmImage);
 router.get("/farms", getFarms);
 router.get("/:farmId", getFarmById); 
-
-
 export default router;
